@@ -19,7 +19,7 @@ body {
   border-radius: 8px; /* Rounded corners for the border */
   padding: 20px; /* Space inside the border */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-  width: 80%;
-  max-width: 800px; /* Limit max width */
+  /* width: 80%;
+  max-width: 800px; */
   text-align: center; /* Center text */
 }

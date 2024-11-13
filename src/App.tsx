@@ -1,6 +1,5 @@
 import { useState } from "react";
 
-// Importing components
 import { ChildrenComponents } from "./patterns/children-components/children-components";
 import { CompoundComponents } from "./patterns/compound-components/compound-components";
 import { ContainerPresentationComponents } from "./patterns/container-presentation-components/container-presentation-components";
@@ -12,7 +11,9 @@ import { RefFunctionality } from "./patterns/ref-functionality/ref-functionality
 import { SingleResponsibilityPrinciple } from "./patterns/single-responsibility-principle/single-responsibility-principle";
 import { VariantProps } from "./patterns/variant-props/variant-props";
 import styles from "./app.module.css";
-// Define the chapters with titles and components
+import { Abstractions } from "./abstractions/abstractions";
+import { TicTacToe } from "./tic-tac-toe/tic-tac-toe";
+
 const chapters = [
   {
     title: "Single Responsibility Principle",
@@ -30,6 +31,8 @@ const chapters = [
   { title: "Variant Props", component: <VariantProps /> },
   { title: "Ref Functionality", component: <RefFunctionality /> },
   { title: "Data Providers", component: <DataProviders /> },
+  { title: "Abstractions", component: <Abstractions /> },
+  { title: "Abstractions - tic-tac-toe", component: <TicTacToe /> },
 ];
 
 function App() {
