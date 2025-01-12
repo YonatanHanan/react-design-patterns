@@ -13,6 +13,8 @@ import { VariantProps } from "./patterns/variant-props/variant-props";
 import styles from "./app.module.css";
 import { Abstractions } from "./abstractions/abstractions";
 import { TicTacToe } from "./tic-tac-toe/tic-tac-toe";
+import { CoolApis } from "./cool-apis/cool-apis";
+import { UrlState } from "./url-state/url-state";
 
 const chapters = [
   {
@@ -33,9 +35,11 @@ const chapters = [
   { title: "Data Providers", component: <DataProviders /> },
   { title: "Abstractions", component: <Abstractions /> },
   { title: "Abstractions - tic-tac-toe", component: <TicTacToe /> },
+  { title: "Web worker", component: <CoolApis /> },
 ];
 
 function App() {
+  // return <UrlState />;
   const [currentChapterIndex, setCurrentChapterIndex] = useState(0);
 
   const handleNext = () => {
